@@ -1,0 +1,170 @@
+.course{
+    margin-bottom: 100px;
+    .course-category{
+        height: 200px;
+        background-color: #404040;
+        margin-bottom: 65px;
+        .category-wapper{
+            display: flex;
+            justify-content: space-between;
+            
+            .category-item{
+                display: flex;
+                position: relative;
+                flex-direction: column;
+                flex-grow: 1;
+                justify-content: center;
+                align-items: center;
+
+                img{
+                    margin-bottom: 20px;
+                }
+                h3{
+                    margin: 0;
+                    color: #fff;
+                    text-transform: uppercase;
+                    font-weight: 300;
+                    font-size: 24px;                
+                }
+                &:hover{
+                    background-color: #3A3836;
+                }
+                &.active{
+                    background-color: #333333;
+                }
+                &.active::before{
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    height: 10px;
+                    width: 100%;
+                    background-image: linear-gradient(to right , #C9923C , #D9B177);
+                }
+                &.active::after{
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    border: 20px solid transparent;
+                    border-bottom: 20px solid #fff;
+
+                }
+            }
+        }
+    }
+    .course-wrapper{
+        .course-header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h2{
+                font-size: 48px;
+                font-weight: 300;
+                padding: 0;
+                margin: 0;
+            }
+            .options-btn{
+                text-align: center;
+                padding: 15px 12px;
+                border: none;
+                text-transform: uppercase;
+                font-size: 14px;
+                margin-left: 10px;
+                background-color: transparent;
+                color: #898989;
+                font-weight: 600;
+                i{
+                    padding-right: 8px;
+                }
+
+                &.active{
+                    border-radius: 20px;
+                    background-image: linear-gradient(to right , #C9923C , #D9B177);
+                    color: #fff;
+                }
+            }
+        }
+        .course-list{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .course-item{
+                width: 270px;
+                border: 1px solid #E1E1E1;
+                margin-bottom: 30px;
+                .course-item-describe{
+                    padding: 20px 15px;
+                    .course-rating-stars{
+                        display: flex;
+                        margin: 0 0 10px 0;
+                        .start{
+                            color: #E1E1E1;
+                            &.active{
+                                color: #DAB279;
+                            }
+                        }
+                    }
+                    .course-item-name{
+                        font-size: 16px;
+                        color: #999999;
+                        text-transform: capitalize;
+                        margin: 0 0 10px 0;
+
+                    }
+                    .course-item-price{
+                        font-size: 15px;
+                        font-weight: 300;
+                    }
+                }
+            }
+            .sourse-item-detail{
+                border-top: 1px solid #E1E1E1;
+                .wrap-item-detail{
+                    display: flex;
+                    padding: 10px 15px;
+                    justify-content: space-between;
+                    .author{
+                        display: flex;
+                        align-items: center;
+                        img{
+                            height: 20px;
+                            width: 20px;
+                            border-radius: 50%;
+                            margin-right: 7px;
+                        }
+                        .author-name{
+                            margin: 0;
+                        }
+                    }
+                    .care{
+                        display: flex;
+                        align-items: center;
+                        font-size: 14px;
+                        color: #999999;
+                        i{
+                            margin-right: 2px;
+                        }
+                        .heart{
+                            margin-left: 7px;
+                        }
+                    }
+                }
+            }
+        }
+        .see-more{
+            display: flex;
+            align-items: center;
+            .line-bot{
+                width: 90%;
+                border: 0;
+                border-top: 1px solid #dad8d8;
+            }
+            span{
+                margin-left: 15px;
+                i{
+                    color: #DAB279;
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,86 @@
+.footer{
+    background-color: #fff;
+    position: relative;
+    height: 450px;
+    padding-top: 35px;
+
+    .img-footer{
+        width: 40%;
+        height: 100%;
+    }
+    .footer-container{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        .footer-wrapper{
+            width: 65%;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            .company-description{
+                display: flex;
+                padding-bottom: 30px;
+                border-bottom: 1px solid #E1E1E1;
+                h5{
+                    font-size: 18px;
+                    font-weight: 400;
+                    margin-bottom: 20px;
+                    margin-top: 0;
+                }
+                p{
+                    font-size: 14px;
+                    font-weight: 300;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+                .company-address{
+                    margin-right: 30px;
+                }
+                .working-time{
+                    margin-right: 30px;
+                }
+            }
+            .contact{
+                margin-top: 0;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid #E1E1E1;
+                h4{
+                    margin-top: 0;
+                    font-size: 26px;
+                    font-weight: 500;
+                    margin: 0;
+                }
+                .list-btn{
+                    .btn{
+                        padding: 12px 25px;
+                        width: auto;
+                        border: none;
+                        border-radius: 20px;
+                        color: #fff;
+                        i{
+                            margin-right: 5px;
+                        }
+                    }
+                    .btn-fb{
+                        background-color: #4C6EA9;
+                    }
+                    .btn-gg{
+                        background-color: #FF5838;
+                    }
+                    .btn-yt{
+                        background-color: #DC3833;
+                    }
+                }
+            }
+            .design{
+                margin-top: 20px;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

@@ -174,14 +174,13 @@ html,body{
     position: relative;
     overflow: hidden;
     height: 620px;
-    background-image: url('./img/about-bot.png') ;
     background-size: cover;
 }
 .about-bot-img{
     width: 50%;
     height: 100%;
     float: right;
-    background-color: rgba(25, 25, 25, 0.7);
+    background-color: rgba(25, 25, 25, 0.2);
 }
 .bot-wrap-content{
     position: absolute;
@@ -189,7 +188,7 @@ html,body{
     transform: translateX(-50%);    
 }
 
-.about-bot .about-bot-content{
+/* .about-bot .about-bot-content{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -227,45 +226,33 @@ html,body{
 .about-bot-content .content-btn {
     background-image: linear-gradient(to right , #C9923C,#D9B177);
     color: #fff;
-}
+} */
 
 /* book */
-.book{
-    margin-bottom: 50px;
-}
-.book .book-wrapper .book-title{
-    font-size: 48px;
-    font-weight: 300;
-    padding: 0;
-    margin: 20px 0;
-}
-.book .book-wrapper .book-title-line{
-    width: 100%;
-    height: 3px;
-    background-color: rgba(100, 100, 100, .2);
-    margin-bottom: 30px;
-}
-.book .book-wrapper .book-title-line .line-color{
+
+
+
+/* .book .book-wrapper .book-title-line .line-color{
     width: 160px;
     height: 100%;
     background-color: sandybrown;   
-}
-.book-list{
+} */
+/* .book-list{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-}
+} */
 
-.book-item{
+/* .book-item{
     width: 270px;
     height: 340px;
     box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, .1);
     box-sizing: border-box;
     padding: 20px;
-
+    margin: 0 15px;
     position: relative;
-}
-.book-item .book-item-img{
+} */
+/* .book-item .book-item-img{
     display: flex;
     justify-content: center;
     margin-bottom: 25px;
@@ -280,7 +267,7 @@ html,body{
     font-size: 14px;
     margin: 0;
     color: rgb(238, 132, 70);
-}
+} */
 /* .book-item .book-item-buy {
     height: 100%;
     width: 160px;
@@ -288,7 +275,7 @@ html,body{
     left: 12%;
     background-color: sandybrown;
 } */
-.book-item .book-item-buy{
+/* .book-item .book-item-buy{
     position: absolute;
     bottom: -10px;
     right: 20px;
@@ -297,12 +284,12 @@ html,body{
     border: none;
     width: 80px;
     font-size: 12px;
-}
-.book-item .book-item-buy.active{
+} */
+/* .book-item .book-item-buy.active{
 
     background-image: linear-gradient(to right , #C9923C,#D9B177);
     color: #fff;
-}
+} */
 
 /* general */
 .container{

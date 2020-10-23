@@ -1,0 +1,185 @@
+// book
+.book{
+    margin-top: 50px;
+    margin-bottom: 150px;
+    .book-wrapper{
+        .book-title{
+            font-size: 48px;
+            font-weight: 300;
+            padding: 0;
+            margin: 20px 0;
+        }
+        .book-title-line{
+            width: 100%;
+            height: 3px;
+            background-color: rgba(100, 100, 100, .2);
+            margin-bottom: 30px;
+            .line-color{
+                width: 160px;
+                height: 100%;
+                background-color: sandybrown;   
+            }
+        }
+    }
+    .book-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .slick-list{
+            height: 350px;
+            .book-item{
+                position: relative;
+                width: 270px;
+                height: 340px;
+                box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, .1);
+                box-sizing: border-box;
+
+                margin: 0 15px;
+                .book-item-wrap{
+                    position: relative;
+                    padding: 20px;
+                    overflow: hidden;
+                    .book-item-new{
+                        position: absolute;
+                        background-image: linear-gradient(to right , #C9923C,#D9B177);
+                        width: 100%;
+                        height: 30px;
+                        line-height: 30px;
+                        transform: rotate(45deg);
+                        text-align: center;
+                        left: 97px;
+                        top: 6px;
+                        color: #fff;
+                        font-weight: 400;
+                        box-shadow: 0 3px 4px 1px rgba(0,0,0,0.2);
+                    }
+                }
+                .book-item-img{
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 25px;
+                    height: 210px;
+                    overflow: hidden;
+                }
+                .book-item-name{
+                    font-size: 14px;
+                    margin: 0;
+                }
+                .book-item-price{
+                    font-size: 14px;
+                    margin: 0;
+                    color: rgb(238, 132, 70);
+                }
+                .book-item-buy{
+                    position: absolute;
+                    bottom: -10px;
+                    right: 20px;
+                    height: 30px;
+                    border-radius: 20px;
+                    border: none;
+                    width: 80px;
+                    font-size: 12px;
+                    &.active{
+                        background-image: linear-gradient(to right , #C9923C,#D9B177);
+                        color: #fff;
+                    }
+                }
+                
+            }
+        }
+        .slick-dots{
+            position: absolute;
+            bottom: -70px;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            left: 50%;
+            justify-content: center;
+            margin: 0;
+            padding: 16px 0;
+            list-style: none;
+            li{
+                max-height: 10px;
+                margin: 0 0.25rem;
+                background: transparent;
+                border-radius: 50%;
+                border: none;
+                button{
+                    display: block;
+                    border-radius: 50%;
+                    width: 10px;
+                    height: 10px;
+                    padding: 0;
+                    border: none;
+                    font-size: 0;
+                    outline:none;
+                    border: 1px solid rgb(214, 214, 214);
+                    background-color: transparent;
+                    color: transparent;
+                }
+                &.slick-active{
+                    background-color: #D9B177;
+                    border: none;
+                }
+                &.slick-active button{
+                    background-color: #D9B177;
+                    border: none;
+                }
+            }
+        }
+        .prev{
+            position: absolute;
+            top: 50%;
+            left: 0px;
+            transform: translateY(-50%);
+            z-index: 1000;
+            font-size: 20px;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            background-color: #EBEBEB;
+            color: #D9B177;
+        }
+        .next{
+            position: absolute;
+            top: 50%;
+            right: 0px;
+            transform: translateY(-50%);
+            z-index: 1000;
+            font-size: 20px;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            background-color: #EBEBEB;
+            color: #D9B177;
+        }
+    }
+}
+
+.slick-dots li.slick-active button{
+    background-color: #FFF;
+    border: none;
+}
+.slick-dots li.slick-active {
+    background-color: #fff;
+    border: none;
+}
+.slick-list .draggable{
+    height: 300px;
+    width: 200px;
+    overflow: hidden;
+}
+
+// btn pause/play
+.btn-pause-play{
+    bottom: 20px;
+    background-color: transparent;
+    color: #CDA872;
+    border: none;
+    font-size: 20px;
+    outline:none;
+}

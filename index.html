@@ -21,6 +21,25 @@
     <!-- <link rel="stylesheet" href="assets/css/main.css"> -->
     <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">     
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="./scss/main.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+
 </head>
 <body>
     <div class="wrapper-home">
@@ -91,9 +110,9 @@
             <div style="clear: both;"></div>
         </div>
         <div class="about-bot">
-            <div class="about-bot-img">
-            </div>
-            <div class="bot-wrap-content container">
+
+            <div class="about-bot-dark" id="about-bot-dark"></div>
+            <div class="bot-wrap-content container" id="bot-wrap-content">
                 <div class="about-bot-content">
                     <h2 class="content-title">Khóa học & sự kiện</h2>
                     <div class="content-title-line">
@@ -103,6 +122,24 @@
                     <button class="content-btn btn">Xem thêm</button>
                 </div>
             </div>  
+
+            <div class="about-slider-image" id="about-slider-image">
+                <div class="slider-item">
+                    <img src="./img/about-bot.png" alt="photo">
+                </div>
+                <div class="slider-item">
+                    <img src="./img/scenery_2.jpg" alt="photo">
+                </div>
+                <div class="slider-item">
+                    <img src="./img/scenery_3.jpg" alt="photo">
+                </div>
+                <div class="slider-item">
+                    <img src="./img/scenery_4.jpg" alt="photo">
+                </div>
+            </div>
+           
+
+           
             <div style="clear: both;"></div>
         </div>
     </section>
@@ -114,43 +151,580 @@
             </div>
             <div class="book-list">
                 <div class="book-item">
-                    <div class="book-item-img">
-                        <img src="./img/book-1.png" alt="">
+                    <div class="book-item-wrap">
+                        <h3 class="book-item-new">new</h3>
+                        <div class="book-item-img">
+                            <img src="./img/book-1.png" alt="">
+                        </div>
+                        <h5 class="book-item-name">Lập trình ngôn ngữ tư duy</h5>
+                        <p class="book-item-price">120.000<sup>đ</sup></p>
                     </div>
-                    <h5 class="book-item-name">Lập trình ngôn ngữ tư duy</h5>
-                    <p class="book-item-price">120.000<sup>đ</sup></p>
                     <button class="book-item-buy active">Mua ngay</button>
                 </div>
                 <div class="book-item">
-                    <div class="book-item-img">
-                        <img src="./img/book-2.png" alt="">
+                    <div class="book-item-wrap">
+                        <div class="book-item-img">
+                            <img src="./img/book-2.png" alt="">
+                        </div>
+                        <h5 class="book-item-name">Lập trình ngôn ngữ tư duy</h5>
+                        <p class="book-item-price">120.000<sup>đ</sup></p>
                     </div>
-                    <h5 class="book-item-name">Lập trình ngôn ngữ tư duy</h5>
-                    <p class="book-item-price">120.000<sup>đ</sup></p>
                     <button class="book-item-buy ">Mua ngay</button>
                 </div>
                 <div class="book-item">
-                    <div class="book-item-img">
-                        <img src="./img/book-3.png" alt="">
+                    <div class="book-item-wrap">
+                        <h3 class="book-item-new">new</h3>
+                        <div class="book-item-img">
+                            <img src="./img/book-3.png" alt="">
+                        </div>
+                        <h5 class="book-item-name">Lập trình ngôn ngữ tư duy</h5>
+                        <p class="book-item-price">120.000<sup>đ</sup></p>
                     </div>
-                    <h5 class="book-item-name">Lập trình ngôn ngữ tư duy</h5>
-                    <p class="book-item-price">120.000<sup>đ</sup></p>
+                    <button class="book-item-buy active">Mua ngay</button>
+                </div>
+                <div class="book-item">
+                    <div class="book-item-wrap">
+                        <div class="book-item-img">
+                            <img src="./img/book-4.png" alt="">
+                        </div>
+                        <h5 class="book-item-name">Lập trình ngôn ngữ tư duy</h5>
+                        <p class="book-item-price">120.000<sup>đ</sup></p>
+                    </div>
+                    <button class="book-item-buy active">Mua ngay</button>
+                </div>
+
+
+                <div class="book-item">
+                    <div class="book-item-wrap">
+                        <h3 class="book-item-new">new</h3>
+                        <div class="book-item-img">
+                            <img src="./img/book-1.png" alt="">
+                        </div>
+                        <h5 class="book-item-name">Lập trình ngôn ngữ tư duy</h5>
+                        <p class="book-item-price">120.000<sup>đ</sup></p>
+                    </div>
+                    <button class="book-item-buy active">Mua ngay</button>
+                </div>
+                <div class="book-item">
+                    <div class="book-item-wrap">
+                        <div class="book-item-img">
+                            <img src="./img/book-2.png" alt="">
+                        </div>
+                        <h5 class="book-item-name">Lập trình ngôn ngữ tư duy</h5>
+                        <p class="book-item-price">120.000<sup>đ</sup></p>
+                    </div>
                     <button class="book-item-buy ">Mua ngay</button>
                 </div>
                 <div class="book-item">
-                    <div class="book-item-img">
-                        <img src="./img/book-4.png" alt="">
+                    <div class="book-item-wrap">
+                        <h3 class="book-item-new">new</h3>
+                        <div class="book-item-img">
+                            <img src="./img/book-3.png" alt="">
+                        </div>
+                        <h5 class="book-item-name">Lập trình ngôn ngữ tư duy</h5>
+                        <p class="book-item-price">120.000<sup>đ</sup></p>
                     </div>
-                    <h5 class="book-item-name">Lập trình ngôn ngữ tư duy</h5>
-                    <p class="book-item-price">120.000<sup>đ</sup></p>
-                    <button class="book-item-buy ">Mua ngay</button>
+                    <button class="book-item-buy active">Mua ngay</button>
+                </div>
+                <div class="book-item">
+                    <div class="book-item-wrap">
+                        <div class="book-item-img">
+                            <img src="./img/book-4.png" alt="">
+                        </div>
+                        <h5 class="book-item-name">Lập trình ngôn ngữ tư duy</h5>
+                        <p class="book-item-price">120.000<sup>đ</sup></p>
+                    </div>
+                    <button class="book-item-buy active">Mua ngay</button>
                 </div>
             </div>
         </div>
-      
     </section>
-    
+    <section class="course">
+        <div class="course-category">
+            <div class="category-wapper container">
+                <div class="category-item active">
+                    <img src="/img/Forma_01.png" alt="photo">
+                    <h3>khóa học</h3>
+                </div>
+                <div class="category-item aa">
+                    <img src="/img/Forma_01.png" alt="photo">
+                    <h3>khóa học</h3>
+                </div>
+                <div class="category-item">
+                    <img src="/img/Forma_01.png" alt="photo">
+                    <h3>khóa học</h3>
+                </div>
+                <div class="category-item">
+                    <img src="/img/Forma_01.png" alt="photo">
+                    <h3>Khóa học</h3>
+                </div>
+            </div>
+        </div>
+        <div class="course-wrapper container">
+            <div class="course-header">
+                <h2>Khóa học online</h2>
+                <div class="course-header-options">
+                    <button class="options-btn active"><i class="fas fa-eye"></i> xem nhiều nhất</button>
+                    <button class="options-btn"><i class="fab fa-hacker-news-square"></i> mới nhất</button>
+                    <button class="options-btn"><i class="far fa-thumbs-up"></i>được quan tâm</button>
+                    <button class="options-btn"><i class="fas fa-dollar-sign"></i>miễn phí</button>
+                </div>
+            </div>
+            <div class="line-header-section">
+                <div class="line-color"></div>
+            </div>
+            <div class="course-list">
+                <div class="course-item">
+                    <img src="/img/course_01.png" alt="">
+                    <div class="course-item-describe">
+                        <div class="course-rating-stars">
+                            <div class="start active"><i class="fas fa-star"></i></div>
+                            <div class="start active"><i class="fas fa-star"></i></div>
+                            <div class="start active"><i class="fas fa-star"></i></div>
+                            <div class="start active"><i class="fas fa-star"></i></div>
+                            <div class="start"><i class="fas fa-star"></i></div>
+                        </div>
+                        <h4 class="course-item-name">Những mô thức đột phá thành công - Hạnh phúc</h4>
+                        <p class="course-item-price">600.000 <sup>đ</sup></p>
+                    </div>
+                    <div class="sourse-item-detail">
+                        <div class="wrap-item-detail">
+                            <div class="author">
+                                <img src="./img/author_01.jpg" alt="">
+                                <h5 class="author-name">Phuong Nguyen</h5>
+                            </div>
+                            <div class="care">
+                                <div class="person">
+                                    <i class="fas fa-user"></i>1,200
+                                </div>
+                                <div class="heart">
+                                    <i class="fas fa-heart"></i>1,000
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="course-item">
+                    <img src="/img/course_02.png" alt="">
+                    <div class="course-item-describe">
+                        <div class="course-rating-stars">
+                            <div class="start active"><i class="fas fa-star"></i></div>
+                            <div class="start active"><i class="fas fa-star"></i></div>
+                            <div class="start active"><i class="fas fa-star"></i></div>
+                            <div class="start active"><i class="fas fa-star"></i></div>
+                            <div class="start"><i class="fas fa-star"></i></div>
+                        </div>
+                        <h4 class="course-item-name">Những mô thức đột phá thành công - Hạnh phúc</h4>
+                        <p class="course-item-price">600.000 <sup>đ</sup></p>
+                    </div>
+                    <div class="sourse-item-detail">
+                        <div class="wrap-item-detail">
+                            <div class="author">
+                                <img src="./img/author_02.jpg" alt="">
+                                <h5 class="author-name">Phuong Nguyen</h5>
+                            </div>
+                            <div class="care">
+                                <div class="person">
+                                    <i class="fas fa-user"></i>1,200
+                                </div>
+                                <div class="heart">
+                                    <i class="fas fa-heart"></i>1,000
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-item">
+                    <img src="/img/course_03.png" alt="">
+                    <div class="course-item-describe">
+                        <div class="course-rating-stars">
+                            <div class="start active"><i class="fas fa-star"></i></div>
+                            <div class="start active"><i class="fas fa-star"></i></div>
+                            <div class="start active"><i class="fas fa-star"></i></div>
+                            <div class="start active"><i class="fas fa-star"></i></div>
+                            <div class="start"><i class="fas fa-star"></i></div>
+                        </div>
+                        <h4 class="course-item-name">Những mô thức đột phá thành công - Hạnh phúc</h4>
+                        <p class="course-item-price">600.000 <sup>đ</sup></p>
+                    </div>
+                    <div class="sourse-item-detail">
+                        <div class="wrap-item-detail">
+                            <div class="author">
+                                <img src="./img/author_03.jpg" alt="">
+                                <h5 class="author-name">Phuong Nguyen</h5>
+                            </div>
+                            <div class="care">
+                                <div class="person">
+                                    <i class="fas fa-user"></i>1,200
+                                </div>
+                                <div class="heart">
+                                    <i class="fas fa-heart"></i>1,000
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-item">
+                    <img src="/img/course_04.png" alt="">
+                    <div class="course-item-describe">
+                        <div class="course-rating-stars">
+                            <div class="start active"><i class="fas fa-star"></i></div>
+                            <div class="start active"><i class="fas fa-star"></i></div>
+                            <div class="start active"><i class="fas fa-star"></i></div>
+                            <div class="start active"><i class="fas fa-star"></i></div>
+                            <div class="start"><i class="fas fa-star"></i></div>
+                        </div>
+                        <h4 class="course-item-name">Những mô thức đột phá thành công - Hạnh phúc</h4>
+                        <p class="course-item-price">600.000 <sup>đ</sup></p>
+                    </div>
+                    <div class="sourse-item-detail">
+                        <div class="wrap-item-detail">
+                            <div class="author">
+                                <img src="./img/author_04.jpg" alt="">
+                                <h5 class="author-name">Phuong Nguyen</h5>
+                            </div>
+                            <div class="care">
+                                <div class="person">
+                                    <i class="fas fa-user"></i>1,200
+                                </div>
+                                <div class="heart">
+                                    <i class="fas fa-heart"></i>1,000
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-item">
+                    <img src="/img/course_01.png" alt="">
+                    <div class="course-item-describe">
+                        <div class="course-rating-stars">
+                            <div class="start active"><i class="fas fa-star"></i></div>
+                            <div class="start active"><i class="fas fa-star"></i></div>
+                            <div class="start active"><i class="fas fa-star"></i></div>
+                            <div class="start active"><i class="fas fa-star"></i></div>
+                            <div class="start"><i class="fas fa-star"></i></div>
+                        </div>
+                        <h4 class="course-item-name">Những mô thức đột phá thành công - Hạnh phúc</h4>
+                        <p class="course-item-price">600.000 <sup>đ</sup></p>
+                    </div>
+                    <div class="sourse-item-detail">
+                        <div class="wrap-item-detail">
+                            <div class="author">
+                                <img src="./img/author_01.jpg" alt="">
+                                <h5 class="author-name">Phuong Nguyen</h5>
+                            </div>
+                            <div class="care">
+                                <div class="person">
+                                    <i class="fas fa-user"></i>1,200
+                                </div>
+                                <div class="heart">
+                                    <i class="fas fa-heart"></i>1,000
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-item">
+                    <img src="/img/course_02.png" alt="">
+                    <div class="course-item-describe">
+                        <div class="course-rating-stars">
+                            <div class="start active"><i class="fas fa-star"></i></div>
+                            <div class="start active"><i class="fas fa-star"></i></div>
+                            <div class="start active"><i class="fas fa-star"></i></div>
+                            <div class="start active"><i class="fas fa-star"></i></div>
+                            <div class="start"><i class="fas fa-star"></i></div>
+                        </div>
+                        <h4 class="course-item-name">Những mô thức đột phá thành công - Hạnh phúc</h4>
+                        <p class="course-item-price">600.000 <sup>đ</sup></p>
+                    </div>
+                    <div class="sourse-item-detail">
+                        <div class="wrap-item-detail">
+                            <div class="author">
+                                <img src="./img/author_02.jpg" alt="">
+                                <h5 class="author-name">Phuong Nguyen</h5>
+                            </div>
+                            <div class="care">
+                                <div class="person">
+                                    <i class="fas fa-user"></i>1,200
+                                </div>
+                                <div class="heart">
+                                    <i class="fas fa-heart"></i>1,000
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-item">
+                    <img src="/img/course_03.png" alt="">
+                    <div class="course-item-describe">
+                        <div class="course-rating-stars">
+                            <div class="start active"><i class="fas fa-star"></i></div>
+                            <div class="start active"><i class="fas fa-star"></i></div>
+                            <div class="start active"><i class="fas fa-star"></i></div>
+                            <div class="start active"><i class="fas fa-star"></i></div>
+                            <div class="start"><i class="fas fa-star"></i></div>
+                        </div>
+                        <h4 class="course-item-name">Những mô thức đột phá thành công - Hạnh phúc</h4>
+                        <p class="course-item-price">600.000 <sup>đ</sup></p>
+                    </div>
+                    <div class="sourse-item-detail">
+                        <div class="wrap-item-detail">
+                            <div class="author">
+                                <img src="./img/author_03.jpg" alt="">
+                                <h5 class="author-name">Phuong Nguyen</h5>
+                            </div>
+                            <div class="care">
+                                <div class="person">
+                                    <i class="fas fa-user"></i>1,200
+                                </div>
+                                <div class="heart">
+                                    <i class="fas fa-heart"></i>1,000
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-item">
+                    <img src="/img/course_04.png" alt="">
+                    <div class="course-item-describe">
+                        <div class="course-rating-stars">
+                            <div class="start active"><i class="fas fa-star"></i></div>
+                            <div class="start active"><i class="fas fa-star"></i></div>
+                            <div class="start active"><i class="fas fa-star"></i></div>
+                            <div class="start active"><i class="fas fa-star"></i></div>
+                            <div class="start"><i class="fas fa-star"></i></div>
+                        </div>
+                        <h4 class="course-item-name">Những mô thức đột phá thành công - Hạnh phúc</h4>
+                        <p class="course-item-price">600.000 <sup>đ</sup></p>
+                    </div>
+                    <div class="sourse-item-detail">
+                        <div class="wrap-item-detail">
+                            <div class="author">
+                                <img src="./img/author_04.jpg" alt="">
+                                <h5 class="author-name">Phuong Nguyen</h5>
+                            </div>
+                            <div class="care">
+                                <div class="person">
+                                    <i class="fas fa-user"></i>1,200
+                                </div>
+                                <div class="heart">
+                                    <i class="fas fa-heart"></i>1,000
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="see-more">
+                <hr class="line-bot">
+                <span>Xem tất cả <i class="fas fa-chevron-right"></i></span>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="event">
+        <div class="event-registation">
+            <img src="/img/event_01.png" alt="">
+            <div class="registation-wrap">
+                <h5 class="registation-date">
+                    15 tháng 12,2019
+                </h5>
+                <p class="registation-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, ut eveniet.
+                </p>
+                <button class="registation-btn btn">đăng ký tham gia</button>
+            </div>
+        </div>
+        <div class="event-container container">
+            <div class="event-right">
+                <h2 class="event-title">Sự kiện offline</h2>
+                <div class="event-title-line">
+                    <div class="line-color"></div>
+                </div>
+                <div class="event-item">
+                    <div class="event-item-time">
+                        <span class="time-date">15</span>
+                        <hr>
+                        <span class="time-month">08</span>
+                    </div>
+                    <div class="event-item-description">
+                        <div class="descriptiont-start">
+                            <button class="btn-free">FREE</button>
+                            <span>Từ 09:00 đến 12:00</span>
+                        </div>
+                        <h3 class="description-title">Advertisers Embrace Rich Media Format</h3>
+                        <p class="description-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreet dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo ..</p>
+                        <a href="#" class="btn-join">đăng ký tham gia <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="event-item bot">
+                    <div class="event-item-time">
+                        <span class="time-date">15</span>
+                        <hr>
+                        <span class="time-month">08</span>
+                    </div>
+                    <div class="event-item-description">
+                        <div class="descriptiont-start">
+                            <button class="btn-free">FREE</button>
+                            <span>Từ 09:00 đến 12:00</span>
+                        </div>
+                        <h3 class="description-title">Advertisers Embrace Rich Media Format</h3>
+                        <p class="description-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreet dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo ..</p>
+                        <a href="#" class="btn-join">đăng ký tham gia <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="news">
+        <div class="news-wrapper container">
+            <h2 class="news-title">Tin tức</h2>
+            <div class="line-header-section">
+                <div class="line-color"></div>
+            </div>
+            <div class="news-list">
+                <div class="news-item">
+                    <img src="/img/news_01.png" alt="">
+                    <div class="item-wrap-bot">
+                        <div class="item-time">
+                            <span class="time-date">15</span>
+                            <hr>
+                            <span class="time-month">08</span>
+                        </div>
+                        <div class="item-description">
+                            <h3 class="description-title">Advertisers Embrace Rich Media Format</h3>
+                            <p class="description-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreet dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo ..</p>
+                            <a href="#" class="btn-join">Xem chi tiết </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <img src="/img/news_02.png" alt="">
+                    <div class="item-wrap-bot">
+                        <div class="item-time">
+                            <span class="time-date">15</span>
+                            <hr>
+                            <span class="time-month">08</span>
+                        </div>
+                        <div class="item-description">
+                            <h3 class="description-title">Advertisers Embrace Rich Media Format</h3>
+                            <p class="description-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreet dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo ..</p>
+                            <a href="#" class="btn-join">Xem chi tiết </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <img src="/img/news_03.png" alt="">
+                    <div class="item-wrap-bot">
+                        <div class="item-time">
+                            <span class="time-date">15</span>
+                            <hr>
+                            <span class="time-month">08</span>
+                        </div>
+                        <div class="item-description">
+                            <h3 class="description-title">Advertisers Embrace Rich Media Format</h3>
+                            <p class="description-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreet dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo ..</p>
+                            <a href="#" class="btn-join">Xem chi tiết </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <img src="/img/news_04.png" alt="">
+                    <div class="item-wrap-bot">
+                        <div class="item-time">
+                            <span class="time-date">15</span>
+                            <hr>
+                            <span class="time-month">08</span>
+                        </div>
+                        <div class="item-description">
+                            <h3 class="description-title">Advertisers Embrace Rich Media Format</h3>
+                            <p class="description-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreet dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo ..</p>
+                            <a href="#" class="btn-join">Xem chi tiết </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="feel">
+        <div class="feel-slider">
+            <div class="slider-item">
+                <img src="/img/fell_01.png" alt="">
+            </div>
+            <div class="slider-item">
+                <img src="/img/fell_01.png" alt="">
+            </div>
+            <div class="slider-item">
+                <img src="/img/fell_01.png" alt="">
+            </div>
+        </div>
+        <div class="feel-container container" id="feel-container">
+            <div class="feel-wrapper" id="feel-wrapper">
+                <h2 class="feel-title">
+                    Cảm nhận độc giả
+                </h2>
+                <div class="line-header-section">
+                    <div class="line-color"></div>
+                </div>
+                <div class="feel-description">
+                    <h5 class="feel-content">Cảm nhận về sổ tay bán hàng</h5>
+                    <p class="feel-content-sub">Luôn mang theo bên mình cuốn cẩm nang xử lý từ chối trong bán hàng vì rất tiện sử dụng, bỏ túi được. Cuốn cẩm nan đưa ra tình huống chi tiết, những hướng giải quyết thông minh, gợi mở cho người đọc đưa ra ý tưởng xử lý từ chối hay. Khi biết nguyên nhân, bản chất của lời từ chối rồi nên tự tin hơn khi giải quyết.</p>
+                    <p class="feel-author">
+                        Nguyễn Duy Khánh
+                    </p>
+                    <p class="feel-author-des">
+                        Trưởng nhóm kinh doanh tại Manulife (Quản lý gần 100 nhân viên)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <img class="img-footer" src="/img/footer_01.png" alt="">
+        <div class="footer-container container">
+            <div class="footer-wrapper">
+                <div class="company-description">
+                    <address class="company-address">
+                        <h5 >Liên hệ</h5>
+                        <p>
+                            319 chung cư Thuận Việt, Lý Thường Kiệt, Phưởng 15, <br>
+                            Quận 11, Tp.HCM, VIệt Nam<br>
+                            +84 904 456 456<br>
+                            smartmoney@edu.com<br>
+                        </p>
+                    </address>
+                    <div class="working-time">
+                        <h5>Thời gian làm việc</h5>
+                        <p>
+                            Thứ hai - thứ sáu / 08:00 am - 21:00 pm <br>
+                            Thứ bảy / 09:00 - 12:00 <br>
+                            Chủ nhật và ngày lễ nghỉ <br>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="contact">
+                    <h4>Liên hệ với chúng tôi</h4>
+                    <div class="list-btn">
+                        <button class="btn-fb btn"><i class="fab fa-facebook-f"></i>Facebook</button>
+                        <button class="btn-gg btn"><i class="fab fa-google-plus-g"></i>Google</button>
+                        <button class="btn-yt btn"><i class="fab fa-youtube"></i>Youtube</button>
+                    </div>
+                </div>
+                <p class="design">Designed and developed by Mona Media</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
 

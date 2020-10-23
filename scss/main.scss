@@ -1,0 +1,61 @@
+// about bottom
+@import 'book';
+@import 'about';
+@import 'course';
+@import 'general';
+@import 'event';
+@import 'news';
+@import 'feel';
+@import 'footer';
+
+body{
+    background-color: #F8F8F8;
+}
+.slick-dots li{
+    max-height: 10px;
+    margin: 0 0.25rem;
+    background: transparent;
+    border-radius: 50%;
+    border: none;
+}
+.slick-dots li button{
+    display: block;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    border: none;
+    font-size: 0;
+    outline:none;
+    border: 1px solid #FFF;
+    background-color: transparent;
+    color: transparent;
+}
+.slick-dots li.slick-active button{
+    background-color: #FFF;
+    border: none;
+}
+.slick-dots li.slick-active {
+    background-color: #fff;
+    border: none;
+}
+.slick-list .draggable{
+    height: 300px;
+    width: 200px;
+    overflow: hidden;
+}
+
+// btn pause/play
+.btn-pause-play{
+    bottom: 20px;
+    background-color: transparent;
+    color: #CDA872;
+    border: none;
+    font-size: 20px;
+    outline:none;
+}
+
+
+
+
+

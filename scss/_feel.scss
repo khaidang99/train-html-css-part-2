@@ -1,0 +1,145 @@
+.feel{
+    height: 560px;
+    position: relative;
+
+    .feel-slider{
+        z-index: 0;
+    }
+    .feel-container{
+        position: absolute;
+        z-index: 9999;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        .prev{
+            position: absolute;
+            left: -20px;
+            top: 48%;
+            color: #D9B177;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #EBEBEB;
+            text-align: center;
+            z-index: 99999;
+            i{
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }.next{
+            position: absolute;
+            right: -20px;
+            top: 48%;
+            color: #D9B177;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #EBEBEB;
+            text-align: center;
+            z-index: 99999;
+            i{
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
+        .feel-wrapper{
+            text-align: center;
+            z-index: 9999;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            .feel-title{
+                font-size: 48px;
+                font-weight: 300;
+                margin-bottom: 25px;
+                margin-top: 0;
+                color: #fff;
+            }
+            .line-header-section{
+                display: flex;
+                justify-content: center;
+                margin-top: 0;
+                height: 3px;
+                margin-bottom: 35px;
+                .line-color{
+                    background-color: #fff;
+                }
+            }
+            .feel-description{
+                font-weight: 200;
+                width: 70%;
+                .feel-content{
+                    margin-top: 0;
+                    margin-bottom: 30px;
+                    font-size: 24px;
+                    color: #D9B177;
+                }
+                .feel-content-sub{
+                    margin-top: 0;
+                    margin-bottom: 35px;
+                    font-size: 20px;
+                    color: #fff;
+                }
+                .feel-author{
+                    margin-top: 0;
+                    margin-bottom: 10px;
+                    font-size: 24px;
+                    color: #fff;
+                    font-weight: 300;
+                }
+                .feel-author-des{
+                    margin-top: 0;
+                    margin-bottom: 45px;
+                    font-size: 18px;
+                    color: #D9B177;
+                    font-weight: 300;
+                }
+            }
+            .slick-dots{
+                z-index: 1000;
+                display: flex;
+                align-items: center;
+                left: 50%;
+                justify-content: center;
+                margin: 0;
+                padding: 16px 0;
+                list-style: none;
+                li{
+                    max-height: 10px;
+                    margin: 0 0.25rem;
+                    background: transparent;
+                    border-radius: 50%;
+                    border: none;
+                    button{
+                        display: block;
+                        border-radius: 50%;
+                        width: 10px;
+                        height: 10px;
+                        padding: 0;
+                        border: none;
+                        font-size: 0;
+                        outline:none;
+                        border: 1px solid rgb(214, 214, 214);
+                        background-color: transparent;
+                        color: transparent;
+                    }
+                    &.slick-active{
+                        background-color: #D9B177;
+                        border: none;
+                    }
+                    &.slick-active button{
+                        background-color: #D9B177;
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,97 @@
+.news{
+    margin-bottom: 100px;
+    .news-wrapper{
+        .news-title{
+            font-size: 48px;
+            font-weight: 300;
+            margin-bottom: 30px;
+        }
+        .news-list{
+            display: flex;
+            justify-content: space-between;
+            .news-item{
+                margin: 0 10px;
+                &:first-child{
+                    margin-left: 0;
+                }
+                &:last-child{
+                    margin-right: 0;
+                }
+                img{
+                    width: 100%;
+                    height: 170px;
+                    margin-bottom: 15px;
+                }
+                .item-wrap-bot{
+                    display: flex;
+                    .item-time{
+                        margin-right: 17px;
+                        height: 75px;
+                        width: 60px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: #ffffff;
+                        span{
+                            padding: 0 20px;
+                            font-size: 24px;
+                            font-weight: 300;
+                        }
+                        .time-date{
+                            color: #C9923C;
+                        }
+                        .time-month{
+                            color: #9b9a9a;;
+                        }
+                        hr{
+                            margin: 0;
+                            width: 80%;
+                            border: none;
+                            border-bottom: 1px solid #dbdbdb;
+                        }
+                    }
+                    .item-description{
+                        flex-grow: 1;
+                        .descriptiont-start{
+                            margin-bottom: 15px;
+                            .btn-free{
+                                width: 70px;
+                                height: 25px;
+                                background-image: linear-gradient(to right , #C9923C,#D9B177);
+                                border: none;
+                                color: #fff;
+                                font-weight: 400;
+                                margin-right: 15px;
+                            }
+                            span{
+                                font-size: 14px;
+                                color: #9b9a9a;
+                                font-style: italic;
+                            }
+                        }
+                        .description-title{
+                            margin-top: 0;
+                            margin-bottom: 15px;
+                            font-size: 20px;
+                            font-weight: 400;
+                        }
+                        .description-content{
+                            margin-top: 0;
+                            margin-bottom: 15px;
+                            font-size: 14px;
+                            color: #9b9a9a;
+                        }
+                        .btn-join{
+                            margin-top: 0;
+                            font-size: 15px;
+                            font-weight: 700;
+                            text-decoration: none;
+                            color: #C9923C;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
