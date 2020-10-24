@@ -81,12 +81,25 @@ $(document).ready(function(){
         }
     }
 
+    //category
 
     $('.category-item').on('click',function(){
         // $(this).removeClass('avtive'); 
         $('.category-item').not(this).removeClass('active');
 
+        var categoriTitle = $('#course-title');
+        console.log($(this).childNodes)
+        categoriTitle.text($(this).text())
         $(this).addClass('active');
+        const value = $(this).attr('data-filter');
+        if(value=='course'){
+            $('.course-item').show('1000');
+        }
+        else{
+            $('.course-item').not('.'+value).hide('1000');
+            $('.course-item').filter('.'+value).show('1000');
+
+        }
     })
 
     //feel
